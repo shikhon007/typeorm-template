@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@auth/*": ["auth/*"],
+      "@global/*": ["global/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["database/*"],
+      "@user/*": ["user/*"],
+      "@role/*": ["role/*"],
+      "@log/*": ["log/*"]
+    },
+    "typeRoots": ["node", "express", "@types", "./node_modules/@types"],
+    "types": ["jest"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["es2020", "DOM"],
+    "module": "commonjs",
+    "target": "es2020",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "sourceMap": true
+  },
+  "include": ["src/**/*.ts", "@types/**/*.ts"],
+  "files": ["@types/express/index.d.ts", "@types/node/environment.d.ts"],
+  "exclude": ["node_modules"]
+}

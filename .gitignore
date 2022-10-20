@@ -1,0 +1,25 @@
+# dotenv environment variables file
+*.env*
+!.env.example
+
+
+
+# logs
+yarn-debug.log*
+yarn-error.log*
+**/*.log
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+dist
+.DS_Store
