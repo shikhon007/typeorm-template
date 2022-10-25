@@ -11,6 +11,7 @@ module.exports = {
     '@database/(.*)': '<rootDir>/src/database/$1',
     '@user/(.*)': '<rootDir>/src/user/$1',
     '@role/(.*)': '<rootDir>/src/role/$1',
+    '@log/(.*)': '<rootDir>/src/log/$1',
   },
   // automock: true,
 };
