@@ -17,6 +17,6 @@ test('[TEST] Create log test', async function () {
     type: 'TEST_LOG',
     desc: 'Test log',
   });
-
+  //   console.log(newLog);
   expect(newLog.id).toBeTruthy();
 });

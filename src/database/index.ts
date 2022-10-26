@@ -37,12 +37,14 @@ const ormConfig = {
   staging: {},
   test: {
     ...ormConfigBase,
+    database: 'test',
     entities: [path.join(__dirname, './entity/**/*.entity.ts')],
     migrations: [path.join(__dirname, './migration/*.ts')],
     subscribers: [path.join(__dirname, './subscriber/*.ts')],
     logging: false,
     synchronize: true,
     migrationsRun: false,
+    dropSchema: true,
   },
 };
 
