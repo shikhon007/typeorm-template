@@ -10,8 +10,8 @@ afterAll(async () => {
   await AppDataSource.destroy();
 });
 
-test('[TEST] Log POST API Check', function () {
-  return request(app)
+test('[TEST] Log POST API Check', async function () {
+  const res = await request(app)
     .post('/api/v1/log')
     .send({
       type: 'LOG',
@@ -20,4 +20,5 @@ test('[TEST] Log POST API Check', function () {
       updatedBy: 'admin',
     })
     .expect(201);
+  expect(res.body.data.id).toBeTruthy();
 });
