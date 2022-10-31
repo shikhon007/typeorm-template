@@ -13,7 +13,7 @@
     "start": "cross-env NODE_PATH=./dist && cross-env NODE_ENV=production && node --unhandled-rejections=strict ./dist/server.js",
     "dev": "cross-env DEBUG=* && cross-env NODE_ENV=development && nodemon ./src/server.ts",
     "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
-    "test": "jest --watchAll --no-cache",
+    "test": "jest --watchAll --no-cache --runInBand",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "check:types": "tsc --pretty --noEmit",
